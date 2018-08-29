@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-material-react",
+  "version": "1.0.0",
+  "description": "Portfolio Website made using React + Material Design",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "client-start": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
