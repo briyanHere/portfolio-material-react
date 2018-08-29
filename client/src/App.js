@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
+import { withStyles } from '@material-ui/core/styles';
+import withRoot from './withRoot';
+import { HeaderFragment, HomeFragment } from './containers';
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-      </div>
+      <Fragment>
+        <HeaderFragment />
+        <HomeFragment />
+      </Fragment>
     );
   }
 }
 
-export default App;
+export default withRoot(withStyles({})(App));
