@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import { Paper, Tab, Tabs } from '@material-ui/core';
 
@@ -33,10 +34,18 @@ class HeaderTabs extends React.Component {
           indicatorColor="secondary"
           centered
         >
-          <Tab label="Home" />
-          <Tab label="Portfolio" />
-          <Tab label="About" />
-          <Tab label="Contact" />
+          <Link to='/Home'>
+            <Tab label="Home" />
+          </Link>
+          <Link to='/Portfolio'>
+            <Tab label="Portfolio" />
+          </Link>
+          <Link to='/About'>
+            <Tab label="About" />
+          </Link>
+          <Link to='/Contact'>
+            <Tab label="Contact" />
+          </Link>
         </Tabs>
       </Paper>
     );

@@ -4,9 +4,6 @@ import { Button, Grid, Typography } from '@material-ui/core';
 import { Card, CardContent, CardMedia, Divider } from '@material-ui/core';
 
 const styles = theme => ({
-  root: {
-    padding: '20px 25%'
-  },
   row: {
     paddingBottom: 32, 
   },
@@ -41,7 +38,7 @@ function HomeFragment(props) {
 
   return (
     <Fragment>
-      <Grid container spacing={24} className={classes.root} justify="center">
+      <Grid container spacing={24} justify="center">
         <Grid item xs={12} className={classes.row}>
           <Card className={classes.rowOne}>
             <CardMedia
